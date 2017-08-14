@@ -30,7 +30,7 @@
 
     <nav>
       <ul class="nav-container">
-        <li class="column">
+        <li class="thinkful-logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="136" height="28">
             <g fill="#6799ff" fill-rule="evenodd">
               <path d="M9 20h3V8H3V3h17V0H0v11h9v9z"></path>
@@ -47,19 +47,19 @@
               <li>
                 <a href="#">
                   <img src="http://tf-assets-prod.s3.amazonaws.com/wow-next/course-icons/career.gz.svg" alt="Web Development Bootcamp" class="icon">
-                  Web Development Bootcamp
+                  <p>Web Development Bootcamp</p>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="http://tf-assets-prod.s3.amazonaws.com/splash/data-science/data_science.svg" alt="Data Science" class="icon">
-                  Data Science Bootcamp
+                  <p>Data Science Bootcamp</p>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="http://tf-assets-prod.s3.amazonaws.com/wow-next/splash-nav/master-a-new-skill.gz.svg" alt="All courses" class="icon">
-                  All courses
+                  <p>All courses</p>
                 </a>
               </li>
             </ul>
@@ -71,30 +71,30 @@
           <a href="#">
             How it works
           </a>
-          <nav >
+          <nav class="toggle-hide" id="nav2">
             <ul class="nav-sub">
               <li>
                 <a href="#">
                   <img src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/mentorship.gz.svg" alt="1-on-1 mentorship" class="icon">
-                  1-on-1 mentorship
+                  <p>1-on-1 mentorship</p>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/career-services.gz.svg" alt="Career prep" class="icon">
-                  Career prep
+                  <p>Career prep</p>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/guarantee.gz.svg" alt="Job guarantee" class="icon">
-                  Web Development job guarantee
+                  <p>Web Development job guarantee</p>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <img src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/jobs-report.gz.svg" alt="Student outcomes" class="icon">
-                  Student outcomes
+                  <p>Student outcomes</p>
                 </a>
               </li>
             </ul>
@@ -102,7 +102,7 @@
         </li>
 
         <!-- Reviews -->
-        <li class='reviews column'>
+        <li class='review column'>
           <a href="#">
             Reviews
           </a>
@@ -121,9 +121,13 @@
     </nav>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-      $('.column').click(function(e) {
-        $('.column nav').removeClass('toggle-hide');
-        $(this).find("nav").toggleClass('toggle-hide');
+      let subnav2 = $('#nav2')
+      $('.collapse').click(function(e) {
+        let targetNav = $(this).find('nav');
+        $('.collapse > nav').not(targetNav).hide();
+        targetNav.toggle();
+        // console.log(targetNav.attr("class").split(' '));
+        
       })
 // find all that are open
 

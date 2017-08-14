@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     color: #6799FF;
+    text-decoration: none;
 }
 
 body {
@@ -36,8 +37,8 @@ body {
     width: 100%; 
 }
 
-
 .column {
+    flex: 1;
     min-height: 100px;
     min-width: 100px;
 }
@@ -60,15 +61,26 @@ body {
     background-color: #F9FBFF;
     display: flex;
     flex-direction: row; 
-    list-style-type: none;      
+    list-style-type: none;     
+    padding: 100px; 
     width: 100%; 
+    text-align: center;
 }
 
+.nav-sub li {
+    flex: 1;
+}
+
+.nav-sub li p {
+    color: black;
+    flex-wrap: wrap; 
+    text-align: center;
+}
 
 /*ICONS  */
 .icon {
-    height: 20px;
-    width: 20px;
+    height: 74px;
+    width: 74px;
 }
 
 
