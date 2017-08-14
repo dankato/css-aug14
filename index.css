@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    color: #6799FF;
 }
 
 body {
@@ -41,6 +42,11 @@ body {
     min-width: 100px;
 }
 
+.column nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
 
 
 /*NAV TOGGLE  */

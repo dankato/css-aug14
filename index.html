@@ -71,7 +71,7 @@
           <a href="#">
             How it works
           </a>
-          <nav class='toggle-hide'>
+          <nav >
             <ul class="nav-sub">
               <li>
                 <a href="#">
@@ -122,8 +122,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       $('.column').click(function(e) {
+        $('.column nav').removeClass('toggle-hide');
         $(this).find("nav").toggleClass('toggle-hide');
       })
+// find all that are open
+
+// close them, toggle hide
+// open selected one
+
+
+
     </script>
   </body>
 </html>
