@@ -27,10 +27,9 @@
   
 
     <!-- courses -->
-
     <nav>
       <ul class="nav-container">
-        <li class="thinkful-logo">
+        <li class="thinkful-logo main-nav-item">
           <svg xmlns="http://www.w3.org/2000/svg" width="136" height="28">
             <g fill="#6799ff" fill-rule="evenodd">
               <path d="M9 20h3V8H3V3h17V0H0v11h9v9z"></path>
@@ -38,7 +37,7 @@
             </g>
           </svg>
         </li>
-        <li class="column collapse">
+        <li class="column collapse main-nav-item x">
           <a href="#">
             Courses
           </a>
@@ -67,7 +66,7 @@
         </li>
 
         <!-- How it works -->
-        <li class="column collapse">
+        <li class="column collapse main-nav-item x">
           <a href="#">
             How it works
           </a>
@@ -102,17 +101,17 @@
         </li>
 
         <!-- Reviews -->
-        <li class='review column'>
+        <li class='review column main-nav-item x'>
           <a href="#">
             Reviews
           </a>
         </li>
-        <li class='pricing column'>
+        <li class='pricing column main-nav-item x'>
           <a href="#">
             Pricing
           </a>
         </li>
-        <li class='sign-in column'>
+        <li class='sign-in column main-nav-item x'>
           <a href="#">
             Sign in
           </a>
@@ -126,7 +125,6 @@
         let targetNav = $(this).find('nav');
         $('.collapse > nav').not(targetNav).hide();
         targetNav.toggle();
-        // console.log(targetNav.attr("class").split(' '));
         
       })
 // find all that are open
