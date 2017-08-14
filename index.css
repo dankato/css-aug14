@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    background-color: pink;
 }
 
 body {
@@ -24,4 +25,61 @@ body {
 }
 
 /* Add your CSS here */
+
+.container {
+    display: flex;
+    flex-direction: row;       
+
+     
+}
+
+nav {
+    /* min-width: 50px;
+    min-height: 50px; */
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+
+}
+
+.courses {
+
+}
+
+.how-it-works {
+
+}
+
+.reviews {
+
+}
+
+.pricing {
+
+}
+
+.sign-in {
+
+}
+
+@media (max-width: 720px) {
+    .hide-when-small {
+        display: none;
+    }
+    .hide-when-small > nav:hover {
+        color: red;
+    }
+}
+
+@media (min-width: 720px) {
+    .hide-when-big > ul {
+        display: none;
+    }
+
+    /* ul {
+        display: initial;
+    } */
+    .hamburger {
+        display: none;
+    }
+}
 
