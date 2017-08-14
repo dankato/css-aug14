@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    background-color: pink;
 }
 
 body {
@@ -26,40 +25,48 @@ body {
 
 /* Add your CSS here */
 
-.container {
+
+/*NAV CONTAINER  */
+
+.nav-container {
     display: flex;
-    flex-direction: row;       
-
-     
+    flex-direction: row; 
+    list-style-type: none;      
+    width: 100%; 
 }
 
-nav {
-    /* min-width: 50px;
-    min-height: 50px; */
-    /* flex-direction: row-reverse; */
-    justify-content: center;
 
+.column {
+    min-height: 100px;
+    min-width: 100px;
 }
 
-.courses {
 
+
+/*NAV TOGGLE  */
+.toggle-hide {
+    display: none;
 }
 
-.how-it-works {
 
+/*sub nav  */
+.nav-sub {
+    background-color: #F9FBFF;
+    display: flex;
+    flex-direction: row; 
+    list-style-type: none;      
+    width: 100%; 
 }
 
-.reviews {
 
+/*ICONS  */
+.icon {
+    height: 20px;
+    width: 20px;
 }
 
-.pricing {
 
-}
-
-.sign-in {
-
-}
+/*MEDIA QUERIES  */
 
 @media (max-width: 720px) {
     .hide-when-small {
@@ -75,11 +82,7 @@ nav {
         display: none;
     }
 
-    /* ul {
-        display: initial;
-    } */
     .hamburger {
         display: none;
     }
 }
-
